@@ -35,6 +35,12 @@
     "cheerio": "^0.18.0",
     "inline-css": "git://github.com/cs150bf/inline-css",
     "mime": "*",
-    "season": ">=5.0.2"
-  }
+    "season": ">=5.0.2",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
